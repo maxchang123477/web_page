@@ -11,18 +11,56 @@ body {
     text-align: center;
 }
 
-/* Transparent overlay for readability */
+/* Responsive container */
 .container {
     background: rgba(0, 0, 0, 0.5);  /* Dark transparent background */
-    padding: 40px;
+    padding: 5vw;
     border-radius: 10px;
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Prevent too wide on large screens */
 }
 
 /* Title style */
 h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 3em;
-    text-transform: uppercase; /* Makes text look sleek */
+    font-size: 6vw; /* Responsive font size */
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Description style */
+p {
+    font-size: 4vw; /* Responsive font size */
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* Contact info style */
+.contact {
+    font-size: 3vw; /* Slightly smaller font size */
+    color: #cccccc; /* Light gray instead of default blue */
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 8vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+
+    .contact {
+        font-size: 4vw;
+    }
 }
 
 
