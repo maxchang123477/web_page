@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quaterniq Solutions - Physical AI Applications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply fonts */
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        /* Simple scroll behavior */
+        html { scroll-behavior: smooth; }
+        /* Custom accent color (example: electric blue) */
+        .accent-color { color: #2563eb; } /* text-blue-600 */
+        .bg-accent-color { background-color: #2563eb; } /* bg-blue-600 */
+        .border-accent-color { border-color: #2563eb; } /* border-blue-600 */
+        .hover\:bg-accent-darker:hover { background-color: #1d4ed8; } /* hover:bg-blue-700 */
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div>
+                <a href="index.html" class="text-2xl font-bold text-gray-900">Quaterniq</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-gray-900 hover:border-b-2 hover:border-gray-300 pb-1 transition duration-150 ease-in-out">Home</a>
+                <a href="solutions.html" class="text-gray-900 font-bold border-b-2 border-accent-color pb-1" aria-current="page">Solutions</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-900 hover:border-b-2 hover:border-gray-300 pb-1 transition duration-150 ease-in-out">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" aria-label="Open Menu">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-2">
+            <a href="index.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-50">Home</a>
+            <a href="solutions.html" class="block px-6 py-2 text-gray-900 font-semibold bg-gray-100" aria-current="page">Solutions</a>
+            <a href="contact.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-50">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-gray-100 py-16 md:py-20 px-6">
+             <div class="container mx-auto text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Quaterniq Physical AI Solutions
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Applying advanced AI to solve tangible, real-world challenges across industries.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white px-6">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 flex flex-col">
+                        <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-400">
+                           [Placeholder: Manufacturing/QA Visual]
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">AI for Smart Manufacturing & QA</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                Enhance production efficiency and product quality with AI-powered visual inspection, predictive maintenance, and robotic process automation. Our systems identify defects humans miss and optimize workflows in real-time.
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wider">Key Features:</h4>
+                                <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Sub-millimeter defect detection</li>
+                                    <li>Adaptive robotic arm control</li>
+                                    <li>Real-time process optimization</li>
+                                    <li>MES/SCADA integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 flex flex-col">
+                        <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-400">
+                           [Placeholder: Logistics/Warehouse Visual]
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Autonomous Logistics & Warehouse</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                Streamline your supply chain with intelligent automation. Quaterniq enables AMRs and robotic systems to navigate dynamically, manage inventory precisely, and collaborate safely in busy warehouse environments.
+                            </p>
+                             <div class="mt-auto">
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wider">Key Features:</h4>
+                                <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Dynamic SLAM navigation</li>
+                                    <li>Intelligent fleet task allocation</li>
+                                    <li>Object recognition (sorting/picking)</li>
+                                    <li>Safe human-robot interaction</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 flex flex-col">
+                         <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-400">
+                           [Placeholder: Smart Environments Visual]
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Intelligent Environments & Monitoring</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                Create responsive and safe environments using AI-powered monitoring. Applications include security surveillance, infrastructure integrity checks, and environmental condition analysis in real-time.
+                            </p>
+                             <div class="mt-auto">
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wider">Key Features:</h4>
+                                <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Anomaly detection</li>
+                                    <li>Predictive infrastructure analysis</li>
+                                    <li>Automated environmental reporting</li>
+                                    <li>Multi-sensor data integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-20 bg-gray-800 text-white px-6">
+            <div class="container mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">
+                    Let's Tailor a Solution for Your Unique Challenge.
+                </h2>
+                <a href="contact.html" class="inline-block bg-accent-color text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-accent-darker transition duration-300 ease-in-out">
+                    Request a Consultation
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-6">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; <span id="current-year"></span> Quaterniq. All rights reserved.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <span>|</span>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
